@@ -6,6 +6,6 @@
 	$people = $_Post['people'];
 	$message = $_Post['message'];
 	$contenido = "Nombre: " . $nombre . "\nEmail" . $email . "\nTelefono: " . $phone . "\nPeople: " . $people . "\nMessage: " . $message;
-	mail($detino,"Reserva", $contenido);
+	@mail($detino,"Reserva", $contenido);
 	header("Location:index.html");
 ?>
