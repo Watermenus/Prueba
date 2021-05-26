@@ -63,14 +63,14 @@
       <div class="row">
         <div class="col-md-12 text-center marb-35">
           <h1 class="header-h">La mejor experiencia</h1>
-          <p class="header-p">Disfruta de los mejores cortes a la parrilla </p>
+          <p class="header-p">No solo una experiencia gastronomica </p>
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-10">
           <div class="col-md-6 col-sm-6">
             <div class="about-info">
               <h2 class="heading">Acerca de nosotros</h2>
-              <p>Nuestro principal objetivo es brindarle una experiencia gastronómica de calidad y con la mejor atención. En Palo Santo puedes comerte desde un chifrijo hasta un corte de carnes. Consulta por nuestras promociones.</p>
+              <p>Especializados en cortes a la parrilla. Nuestro principal objetivo es brindarle una experiencia gastronómica de calidad y con la mejor atención. En Palo Santo puedes comerte desde un chifrijo hasta un corte de carne. Consulta por nuestras promociones.</p>
               <div class="details-list">
                 <ul>
                   <li><i class="fa fa-check"></i>4 hectareas de terreno para disfrutar</li>
@@ -81,7 +81,7 @@
             </div>
           </div>
           <div class="col-md-6 col-sm-6">
-            <img src="img/res01.jpg" alt="" class="img-responsive">
+            <img src="img/res01.png" alt="" class="img-responsive">
           </div>
         </div>
         <div class="col-md-1"></div>
@@ -95,13 +95,13 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 text-center" style="padding:60px;">
-            <h1 class="header-h">Eventos proximo</h1>
-            <p class="header-p">Mejor eventos para esa persona especial</p>
+            <h1 class="header-h">San Valentin palo santo</h1>
+            <p class="header-p">El mejor eventos para esa persona especial</p>
           </div>
           <div class="col-md-12" style="padding-bottom:60px;">
             <div class="item active left">
               <div class="col-md-6 col-sm-6 left-images">
-                <img src="img/res02.jpg" class="img-responsive">
+                <img src="img/res02.png" class="img-responsive">
               </div>
               <div class="col-md-6 col-sm-6 details-text">
                 <div class="content-holder">
@@ -109,12 +109,12 @@
                   <p>Contaremos con los mejores platillos, degustacion de vinos, postres de la casa y un presente para todas las parejas que esten en aniversario</p>
                   <address>
                               <strong>Lugar: </strong>
-                              lugar de tu local
+                              Palo Santo alajuela
                               <br>
                               <strong>Hora: </strong>
                               08:30pm
                             </address>
-                  <a class="btn btn-imfo btn-read-more" href="#contact">Mas detalle</a>
+                  <a class="btn btn-imfo btn-read-more" a target="_blanck" href="https://goo.gl/maps/AbrFWP7NyVfksM48A">Como llegar</a>
                 </div>
               </div>
             </div>
@@ -311,35 +311,35 @@
           </div>
         </div>
         <div class="col-md-8 col-sm-8">
-          <form class="contactForm" method="post" action="enviar.php" >
+          <form class="contactForm" method="post" action="" >
             <div class="col-md-6 col-sm-6 contact-form pad-form">
               <div class="form-group label-floating is-empty">
-                <input type="text" name="name" class="form-control"  placeholder="Nombre" required />
+                <input type="text" id = "name" name="name" class="form-control"  placeholder="Nombre" required />
               </div>
             </div>
             <div class="col-md-6 col-sm-6 contact-form pad-form">
               <div class="form-group">
-                <input type="email" class="form-control label-floating is-empty" name="email" placeholder="Email" required />
+                <input type="email" id = "email" class="form-control label-floating is-empty" name="email" placeholder="Email" required />
               </div>
             </div>
             <div class="col-md-6 col-sm-6 contact-form">
               <div class="form-group">
-                <input type="text" class="form-control label-floating is-empty" name="phone" placeholder="Telefono" required />
+                <input type="text" id = "phone" class="form-control label-floating is-empty" name="phone" placeholder="Telefono" required />
               </div>
             </div>
             <div class="col-md-6 col-sm-6 contact-form">
               <div class="form-group">
-                <input type="text" class="form-control label-floating is-empty" name="people" placeholder="Miembros" required />
+                <input type="text" id = "people" class="form-control label-floating is-empty" name="people" placeholder="Miembros" required />
               </div>
             </div>
             <div class="col-md-12 contact-form">
               <div class="form-group label-floating is-empty">
-                <textarea class="form-control" name="message" rows="5" rows="3" placeholder="Detalle" required></textarea>
+                <textarea class="form-control" id = "message" name="message" rows="5" rows="3" placeholder="Detalle" required></textarea>
               </div>
             </div>
             <div class="col-md-12 btnpad">
                 <div class="form-group">
-                <input type="submit" value="Reservar mesa" id = "boton">
+                 <button type = "button" onclick="recogerDatos()" class="contacts-btn">Reserve Su Mesa</button>
               </div>
             </div>
           </form>
@@ -376,7 +376,7 @@
   <script src="js/jquery.mixitup.min.js"></script>
   <script src="js/custom.js"></script>
   <script src="contactform/contactform.js"></script>
-
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
